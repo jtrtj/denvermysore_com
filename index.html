@@ -30,7 +30,7 @@
 <body class="has-navbar-fixed-top">
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item has-text-white has-background-black" href="#home-section">
+            <a class="navbar-item has-text-white has-background-black" href="#home-section" id="navbar-brand">
                 Denver Mysore
             </a>
 
@@ -72,10 +72,10 @@
         <section class="hero is-fullheight" id="home-section">
             <div class="hero-body">
                 <div>
-                    <p class="title is-1 has-text-white-ter">
+                    <p class="title is-1 is-size-3-mobile has-text-white-ter">
                         Ashtanga Yoga at Denver Mysore
                     </p>
-                    <p class="subtitle is-3 has-text-grey-lighter">
+                    <p class="subtitle is-3 is-size-5-mobile has-text-grey-lighter">
                         Your space to explore and grow Your practice through gentle guidance.</br>
                         The Denver Mysore Community welcomes you to join us in the common language of breath and
                         movement,
@@ -415,6 +415,8 @@
         // Get all "navbar-burger" elements
         const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
+        const $burgerMenuItems = Array.prototype.slice.call(document.querySelectorAll('.navbar-item'), 0);
+
         // Add a click event on each of them
         $navbarBurgers.forEach(el => {
             el.addEventListener('click', () => {
@@ -427,6 +429,16 @@
                 el.classList.toggle('is-active');
                 $target.classList.toggle('is-active');
 
+            });
+        });
+        $burgerMenuItems.slice(1).forEach(el => {
+            el.addEventListener('click', () => {
+                $navbarBurgers.forEach(el => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                })
             });
         });
 
