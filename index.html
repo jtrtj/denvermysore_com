@@ -10,11 +10,11 @@
 </head>
 <style>
     .home {
-        background-image: url(images/DSCF6079.jpg);
+        background-image: url(images/DSCF6088.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: auto;
+        background-size: cover;
     }
 
     .table.is-borderless td,
@@ -30,7 +30,7 @@
 <body class="has-navbar-fixed-top">
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item has-text-white has-background-black" href="#home-section">
+            <a class="navbar-item has-text-white has-background-black" href="#home-section" id="navbar-brand">
                 Denver Mysore
             </a>
 
@@ -72,10 +72,10 @@
         <section class="hero is-fullheight" id="home-section">
             <div class="hero-body">
                 <div>
-                    <p class="title is-1 has-text-white-ter">
+                    <p class="title is-1 is-size-3-mobile has-text-whiteg ">
                         Ashtanga Yoga at Denver Mysore
                     </p>
-                    <p class="subtitle is-3 has-text-grey-lighter">
+                    <p class="subtitle is-3 is-size-5-mobile has-text-white">
                         Your space to explore and grow Your practice through gentle guidance.</br>
                         The Denver Mysore Community welcomes you to join us in the common language of breath and
                         movement,
@@ -234,171 +234,193 @@
     </section>
     <section class="section" id="schedule-section">
         <div class="container">
-            <p class="title is-1">Schedule</p>
-            <p class="subtitle is-3">
-                Mysore style classes are a well established and traditional way to learn and
-                practice Ashtanga Yoga and are ideal for beginners as well as advanced practitioners.
-            </p>
-            <table class="table is-borderless">
-                <tbody>
-                    <tr class="is-link">
-                        <td>Sunday</td>
-                        <td>Mysore</td>
-                        <td>8:00-9:45 AM</td>
-                    </tr>
-                    <tr class="is-info">
-                        <td>Monday</td>
-                        <td>Mysore</td>
-                        <td>6:45-8:30 AM</td>
-                    </tr>
-                    <tr class="is-link">
-                        <td>Tuesday</td>
-                        <td>Mysore</td>
-                        <td>6:45-9:00 AM</td>
-                    </tr>
-                    <tr class="is-info">
-                        <td>Wednesday</td>
-                        <td>Mysore</td>
-                        <td>6:45-8:30 AM</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="is-info">Pranayama</td>
-                        <td class="is-info">8:30-9:00 AM</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="is-info">join remotely</td>
-                        <td class="is-info"><a href="https://meet.google.com/kqq-hgbk-msp" target="_blank"
-                                rel="noopener noreferrer">https://meet.google.com/kqq-hgbk-msp</a></td>
-                    </tr>
-                    <tr class="is-link">
-                        <td>Thursday</td>
-                        <td>Mysore</td>
-                        <td>6:45-8:30 AM</td>
-                    </tr>
-                    <tr class="is-info">
-                        <td>Friday</td>
-                        <td>Led Primary</td>
-                        <td>7:00-8:30 AM</td>
-                    </tr>
-                    <tr class="is-danger">
-                        <td>Saturday</td>
-                        <td>rest day</td>
-                        <td>no class</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            all times are in Mountain Time Zone
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
+            <div class="fixed-grid has-1-cols-mobile">
+                <div class="grid">
+                    <div class="cell">
+                        <p class="title is-1">Schedule</p>
+                        <p class="subtitle is-3">
+                            Mysore style classes are a well established and traditional way to learn and
+                            practice Ashtanga Yoga and are ideal for beginners as well as advanced practitioners.
+                        </p>
+                    </div>
+                    <div class="cell">
+                        <table class="table is-borderless">
+                            <tbody>
+                                <tr class="is-dark">
+                                    <td>Sunday</td>
+                                    <td>mysore</td>
+                                    <td>8:00-9:45 AM</td>
+                                </tr>
+                                <tr class="is-light">
+                                    <td>Monday</td>
+                                    <td>mysore</td>
+                                    <td>6:45-8:30 AM</td>
+                                </tr>
+                                <tr class="is-dark">
+                                    <td>Tuesday</td>
+                                    <td>mysore</td>
+                                    <td>6:45-9:00 AM</td>
+                                </tr>
+                                <tr class="is-light">
+                                    <td>Wednesday</td>
+                                    <td>mysore</td>
+                                    <td>6:45-8:30 AM</td>
+                                </tr>
+                                <tr>
+                                    <td class="is-light"></td>
+                                    <td class="is-light">pranayama</td>
+                                    <td class="is-light">8:30-9:00 AM</td>
+                                </tr>
+                                <tr>
+                                    <td class="is-light"></td>
+                                    <td class="is-light">join remotely</td>
+                                    <td class="is-light"><a href="https://meet.google.com/kqq-hgbk-msp" target="_blank"
+                                            rel="noopener noreferrer">google meet</a></td>
+                                </tr>
+                                <tr class="is-dark">
+                                    <td>Thursday</td>
+                                    <td>mysore</td>
+                                    <td>6:45-8:30 AM</td>
+                                </tr>
+                                <tr class="is-light">
+                                    <td>Friday</td>
+                                    <td>led primary</td>
+                                    <td>7:00-8:30 AM</td>
+                                </tr>
+                                <tr class="is-danger">
+                                    <td>Saturday</td>
+                                    <td>rest day</td>
+                                    <td>no class</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        all times are in Mountain Time Zone
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="section" id="rest-days-section">
-        <div class="container">
-            <p class="title is-2">Moon Days 2024</p>
-            <p class="subtitle is-4">full and new moon days are observed as rest days in the Ashtanga Yoga tradition.
-            </p>
-            <table class="table">
-                <th title="Month">Month</th>
-                <th title="New Moon">New Moon</th>
-                <th title="Full Moon">Full Moon</th>
-                <tbody>
-                    <tr>
-                        <td>January</td>
-                        <td>11th</td>
-                        <td>25th</td>
-                    </tr>
-                    <tr>
-                        <td>February</td>
-                        <td>9th</td>
-                        <td>24th</td>
-                    </tr>
-                    <tr>
-                        <td>March</td>
-                        <td>10th</td>
-                        <td>25th</td>
-                    </tr>
-                    <tr>
-                        <td>April</td>
-                        <td>8th</td>
-                        <td>23rd</td>
-                    </tr>
-                    <tr>
-                        <td>May</td>
-                        <td>7th</td>
-                        <td>23rd</td>
-                    </tr>
-                    <tr>
-                        <td>June</td>
-                        <td>6th</td>
-                        <td>21st</td>
-                    </tr>
-                    <tr>
-                        <td>July</td>
-                        <td>5th</td>
-                        <td>21st</td>
-                    </tr>
-                    <tr>
-                        <td>August</td>
-                        <td>4th</td>
-                        <td>19th</td>
-                    </tr>
-                    <tr>
-                        <td>September</td>
-                        <td>2nd</td>
-                        <td>17th</td>
-                    </tr>
-                    <tr>
-                        <td>October</td>
-                        <td>2nd</td>
-                        <td>17th</td>
-                    </tr>
-                    <tr>
-                        <td>November</td>
-                        <td>1st</td>
-                        <td>15th</td>
-                        <td>30th (extra new moon)</td>
-                    </tr>
-                    <tr>
-                        <td>December</td>
-                        <td>15th</td>
-                        <td>30th</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="fixed-grid has-1-cols-mobile">
+            <div class="grid">
+                <div class="cell">
+
+                    <p class="title is-2">Moon Days 2024</p>
+                    <p class="subtitle is-4">full and new moon days are observed as rest days in the Ashtanga Yoga
+                        tradition.
+                    </p>
+                </div>
+                <div class="cell">
+                    <table class="table">
+                        <th title="Month"></th>
+                        <th title="New Moon">New Moon</th>
+                        <th title="Full Moon">Full Moon</th>
+                        <tbody>
+                            <tr>
+                                <td>January</td>
+                                <td>11th</td>
+                                <td>25th</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td>9th</td>
+                                <td>24th</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td>10th</td>
+                                <td>25th</td>
+                            </tr>
+                            <tr>
+                                <td>April</td>
+                                <td>8th</td>
+                                <td>23rd</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td>7th</td>
+                                <td>23rd</td>
+                            </tr>
+                            <tr>
+                                <td>June</td>
+                                <td>6th</td>
+                                <td>21st</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>5th</td>
+                                <td>21st</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td>4th</td>
+                                <td>19th</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td>2nd</td>
+                                <td>17th</td>
+                            </tr>
+                            <tr>
+                                <td>October</td>
+                                <td>2nd</td>
+                                <td>17th</td>
+                            </tr>
+                            <tr>
+                                <td>November</td>
+                                <td>1st</td>
+                                <td>15th</td>
+                                <td>30th (extra new moon)</td>
+                            </tr>
+                            <tr>
+                                <td>December</td>
+                                <td>15th</td>
+                                <td>30th</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </section>
     <section class="hero is-fullheight is-dark  " id="contact-section">
         <div class="hero-body">
             <div class="section">
                 <p class="title">
+                    Contact
+                </p>
+                <p class="subtitle">
                     Christina Toyota
                 </p>
-
-                <a class="button is-success is-rounded is-dark is-responsive" href="tel:+1303-588-6663">
-                    303-588-6663
-                </a>
-
-                <a class="button is-info is-rounded is-dark is-responsive" href="mailto:denvermysore@gmail.com">
-                    email
-                </a>
-
-                <a class="button is-danger is-rounded is-dark is-responsive"
-                    href="https://www.instagram.com/denver_mysore/" target="_blank" rel="noopener noreferrer">
-                    instagram
-                </a>
-
+                <div class="grid">
+                    <div class="cell">
+                        <a class="button is-success is-rounded is-dark" href="tel:+1303-588-6663">
+                            303-588-6663
+                        </a>
+                    </div>
+                    <div class="cell">
+                        <a class="button is-info is-rounded is-dark" href="mailto:denvermysore@gmail.com">
+                            email
+                        </a>
+                    </div>
+                    <div class="cell">
+                        <a class="button is-danger is-rounded is-dark" href="httdivs://www.instagram.com/denver_mysore/"
+                            target="_blank" rel="noopener noreferrer">
+                            instagram
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
 </body>
 <footer class="footer">
     <div class="content has-text-centered">
@@ -415,6 +437,8 @@
         // Get all "navbar-burger" elements
         const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
+        const $burgerMenuItems = Array.prototype.slice.call(document.querySelectorAll('.navbar-item'), 0);
+
         // Add a click event on each of them
         $navbarBurgers.forEach(el => {
             el.addEventListener('click', () => {
@@ -427,6 +451,16 @@
                 el.classList.toggle('is-active');
                 $target.classList.toggle('is-active');
 
+            });
+        });
+        $burgerMenuItems.slice(1).forEach(el => {
+            el.addEventListener('click', () => {
+                $navbarBurgers.forEach(el => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                })
             });
         });
 
